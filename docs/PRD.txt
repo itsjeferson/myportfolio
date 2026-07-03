@@ -1,0 +1,68 @@
+Product Requirements Document: Personal Portfolio Landing Page
+1. Overview
+Product: Personal portfolio landing page Purpose: Showcase skills and projects to attract attention from IT companies and businesses for job opportunities, freelance work, or contracts. Owner: Mark Jeferson Manalo Date: July 3, 2026
+2. Problem Statement
+Recruiters, hiring managers, and business decision-makers need a fast, credible way to evaluate a candidate's or freelancer's technical skills and past work. A resume or LinkedIn profile alone doesn't show depth of work — a portfolio site does, but only if it's clear, scannable, and demonstrates real, relevant projects.
+3. Goals
+Primary goal: Get visitors (recruiters, hiring managers, business owners) to view skills and project work, and come away with a clear, positive impression of capability.
+Secondary goals:
+Drive contact / outreach (email, LinkedIn, calendar booking)
+Build credibility and professional trust
+Rank reasonably well in search for the person's name
+4. Target Audience
+Primary: IT companies and technical hiring managers/recruiters evaluating candidates for roles
+Secondary: Businesses looking to hire a freelancer/contractor for a project
+Assume audience is time-poor and scanning — they'll spend 10-30 seconds deciding whether to keep reading
+5. Success Metrics
+Metric Target Avg. time on page > 45 seconds Scroll depth to projects section > 60% of visitors Contact link/button clicks Track as primary conversion event Resume/CV downloads Track as secondary conversion event Bounce rate < 55%
+6. Key Features / Page Sections
+6.1 Hero Section
+Name, professional title/tagline (e.g., "Full-Stack Developer")
+One-line value proposition — what you do and for whom
+Primary CTA: "View Projects" or "Contact Me"
+Optional: professional photo
+6.2 About / Summary
+Short bio (2-4 sentences): background, specialties, what kind of problems you solve
+Years of experience, notable employers/clients (if relevant)
+6.3 Skills Section
+Grouped by category (e.g., Languages, Frameworks, Tools, Cloud/DevOps)
+Visual treatment: tags, icons, or simple grid — avoid overloaded skill bars/percentages (low credibility with technical audiences)
+6.4 Projects Section (core focus)
+For each project:
+Project name + short description (problem solved, your role)
+Tech stack used
+Visual: screenshot, GIF, or embedded demo
+Links: Live demo, GitHub repo
+Optional: key metrics/impact (e.g., "reduced load time by 40%")
+Recommend 3-6 strongest projects, not an exhaustive list
+6.5 Experience/Work History (optional, condensed)
+Brief timeline or list — role, company, dates, one-line impact
+Link to full resume/CV (downloadable PDF)
+6.6 Contact Section
+Clear CTA: email link, contact form, or calendar booking link
+Links to LinkedIn, GitHub, and other relevant profiles
+Location/availability/timezone if relevant for remote work
+6.7 Footer
+Copyright, quick nav links, social icons
+7. Non-Functional Requirements
+Performance: Page load under 2 seconds; optimized images
+Responsive: Fully functional on mobile, tablet, desktop
+Accessibility: Semantic HTML, alt text on images, sufficient color contrast (WCAG AA)
+SEO: Meta title/description with name + role, structured headings, sitemap
+Browser support: Latest 2 versions of Chrome, Firefox, Safari, Edge
+8. Design Guidelines
+Clean, minimal, professional — avoid visual clutter that distracts from work samples
+Consistent typography and color palette; 1 accent color max
+Fast, obvious navigation (sticky nav or single-page scroll with anchor links)
+Dark mode optional but not required
+9. Out of Scope (v1)
+Blog/articles section
+Multi-language support
+CMS/admin panel for content editing (content hardcoded or in a simple config file)
+Analytics dashboard beyond basic page-view tracking
+10. Open Questions
+Single-page scroll vs. multi-page site?
+Include testimonials/recommendations section?
+Preferred tech stack for build (e.g., static site vs. React/Next.js)?
+11. Timeline (suggested)
+Phase Duration Content gathering (bio, projects, skills) 2-3 days Design/wireframe 2-3 days Development 1 week Review & polish 2-3 days Launch —
