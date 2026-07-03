@@ -1,0 +1,21 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+
+.skills__card {
+  padding: var(--space-5);
+}
+
+.skills__category {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}

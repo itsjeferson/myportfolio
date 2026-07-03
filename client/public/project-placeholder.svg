@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#eef2ff"/>
+  <g fill="none" stroke="#c7d2fe" stroke-width="2">
+    <rect x="40" y="40" width="560" height="280" rx="12"/>
+  </g>
+  <g fill="#94a3b8" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">
+    <text x="320" y="185">Add a project screenshot</text>
+    <text x="320" y="212" font-size="14">client/src/assets/images/</text>
+  </g>
+</svg>

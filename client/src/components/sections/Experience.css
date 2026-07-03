@@ -1,0 +1,68 @@
+.experience__timeline {
+  position: relative;
+  max-width: 760px;
+  padding-left: var(--space-6);
+  border-left: 2px solid var(--color-border);
+}
+
+.experience__item {
+  position: relative;
+  padding-bottom: var(--space-7);
+}
+
+.experience__item:last-child {
+  padding-bottom: 0;
+}
+
+.experience__marker {
+  position: absolute;
+  left: calc(-1 * var(--space-6) - 6px);
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  border: 3px solid var(--color-bg-alt);
+}
+
+.experience__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.experience__role {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.experience__dates {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.experience__company {
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-top: var(--space-1);
+}
+
+.experience__impact {
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+  line-height: 1.6;
+}
+
+.experience__related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.experience__resume-cta {
+  margin-top: var(--space-7);
+}
