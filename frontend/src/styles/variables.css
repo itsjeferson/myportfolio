@@ -1,25 +1,41 @@
-:root {
-  --color-bg: #ffffff;
-  --color-bg-alt: #f7f8fa;
-  --color-surface: #ffffff;
-  --color-border: #e5e7eb;
-  --color-text: #16181d;
-  --color-text-muted: #5b6270;
-  --color-accent: #2563eb;
-  --color-accent-contrast: #ffffff;
-  --color-tag-bg: #eef2ff;
-  --color-tag-text: #2563eb;
+:root,
+[data-theme='dark'],
+[data-theme='light'] {
+  --color-bg: #08090d;
+  --color-bg-alt: #0d0f15;
+  --color-surface: #12141b;
+  --color-surface-alt: #171a22;
+  --color-border: #23262f;
+  --color-border-strong: #33384a;
+  --color-text: #f2f3f6;
+  --color-text-muted: #8b93a3;
+  --color-text-faint: #565c6b;
+
+  --color-accent: #6ef0de;
+  --color-accent-soft: rgba(110, 240, 222, 0.12);
+  --color-accent-contrast: #04110e;
+  --color-accent-2: #8f8bf7;
+
+  --color-tag-bg: rgba(110, 240, 222, 0.08);
+  --color-tag-text: #7ff2e2;
+  --color-tag-border: rgba(110, 240, 222, 0.25);
+
+  --gradient-accent: linear-gradient(120deg, #6ef0de 0%, #8f8bf7 100%);
+  --gradient-edge: linear-gradient(180deg, #6ef0de 0%, #8f8bf7 60%, transparent 100%);
 
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', var(--font-sans);
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
 
   --max-width: 1120px;
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
 
-  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
-  --shadow-md: 0 4px 16px rgba(16, 24, 40, 0.08);
-  --shadow-lg: 0 12px 32px rgba(16, 24, 40, 0.12);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.55);
+  --shadow-glow: 0 0 0 1px rgba(110, 240, 222, 0.15), 0 12px 40px rgba(110, 240, 222, 0.08);
 
   --space-1: 4px;
   --space-2: 8px;
@@ -33,21 +49,4 @@
 
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
-}
-
-[data-theme='dark'] {
-  --color-bg: #0f1115;
-  --color-bg-alt: #15181e;
-  --color-surface: #1a1d24;
-  --color-border: #2a2e37;
-  --color-text: #edeef1;
-  --color-text-muted: #9aa1ac;
-  --color-accent: #5b8def;
-  --color-accent-contrast: #0f1115;
-  --color-tag-bg: #1e2536;
-  --color-tag-text: #8fb2ff;
-
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
 }

@@ -1,6 +1,11 @@
 import { profile } from '../../data/profile.js';
-import { NAV_LINKS } from '../../utils/navigation.js';
 import './Footer.css';
+
+const SOCIALS = [
+  { label: 'GH', href: profile.socials.github },
+  { label: 'LI', href: profile.socials.linkedin },
+  { label: 'TW', href: profile.socials.twitter },
+];
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -8,27 +13,20 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer__inner">
-        <p className="footer__copy">
-          © {year} {profile.name}. All rights reserved.
-        </p>
+        <p className="footer__name">{profile.name}</p>
+        <span className="footer__rule" aria-hidden="true" />
 
-        <nav className="footer__links">
-          {NAV_LINKS.map((link) => (
-            <a key={link.id} href={`#${link.id}`}>
-              {link.label}
+        <nav className="footer__socials">
+          {SOCIALS.map((social) => (
+            <a key={social.label} href={social.href} target="_blank" rel="noreferrer">
+              {social.label}
             </a>
           ))}
         </nav>
 
-        <div className="footer__socials">
-          <a href={profile.socials.github} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          <a href={profile.socials.linkedin} target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a href={profile.socials.email}>Email</a>
-        </div>
+        <p className="footer__copy">
+          © {year} Built with precision &amp; <span className="footer__highlight">performance</span>.
+        </p>
       </div>
     </footer>
   );

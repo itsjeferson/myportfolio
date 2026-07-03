@@ -1,5 +1,5 @@
+import { FiArrowUpRight } from 'react-icons/fi';
 import { projects } from '../../data/projects.js';
-import { SectionHeading } from '../ui/index.js';
 import { ProjectCard } from './ProjectCard.jsx';
 import './Projects.css';
 
@@ -7,11 +7,12 @@ export const Projects = () => {
   return (
     <section id="projects" className="section projects">
       <div className="container">
-        <SectionHeading
-          eyebrow="Projects"
-          title="Things I've built"
-          description="A selection of projects that best show how I think, build, and ship."
-        />
+        <div className="section-title-row">
+          <h2 className="section-title">Selected Work</h2>
+          <a href="#projects" className="section-title-action">
+            View All <FiArrowUpRight aria-hidden="true" />
+          </a>
+        </div>
 
         <div className="projects__grid">
           {projects.map((project) => (

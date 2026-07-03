@@ -1,30 +1,27 @@
 /**
  * ⚠️ EDIT ME — group your real skills by category.
+ * `icon` must be one of: 'code', 'layers', 'tools', 'cloud' (see Skills.jsx).
  * Add/remove entries freely; the Skills section renders whatever is here.
  */
 export const skills = [
   {
     category: 'Languages',
-    items: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'SQL'],
+    icon: 'code',
+    items: ['TS', 'Go', 'JavaScript', 'SQL'],
   },
   {
-    category: 'Frontend',
-    items: ['React.js', 'Redux / Context API', 'Next.js', 'Tailwind CSS', 'Vite'],
+    category: 'Frameworks',
+    icon: 'layers',
+    items: ['React', 'Next.js', 'Node.js', 'Express'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'WebSockets'],
+    category: 'Tools',
+    icon: 'tools',
+    items: ['Docker', 'Git', 'Jest', 'Figma'],
   },
   {
-    category: 'Databases',
-    items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis'],
-  },
-  {
-    category: 'Cloud & DevOps',
-    items: ['Docker', 'GitHub Actions (CI/CD)', 'AWS', 'Vercel', 'Nginx'],
-  },
-  {
-    category: 'Tools & Practices',
-    items: ['Git/GitHub', 'Jest / Testing Library', 'Agile/Scrum', 'Postman', 'Figma'],
+    category: 'Cloud',
+    icon: 'cloud',
+    items: ['AWS', 'Vercel', 'Nginx', 'CI/CD'],
   },
 ];

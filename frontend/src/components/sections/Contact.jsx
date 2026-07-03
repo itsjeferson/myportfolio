@@ -1,5 +1,6 @@
+import { FiMail, FiGithub, FiLink } from 'react-icons/fi';
 import { profile } from '../../data/profile.js';
-import { SectionHeading, Button } from '../ui/index.js';
+import { Button } from '../ui/index.js';
 import { useContactForm } from '../../hooks/useContactForm.js';
 import './Contact.css';
 
@@ -8,35 +9,42 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="section contact">
-      <div className="container contact__inner">
-        <div className="contact__info">
-          <SectionHeading
-            eyebrow="Contact"
-            title="Let's work together"
-            description={`Have a role or project in mind? I'm ${profile.availability.toLowerCase()}.`}
-          />
+      <div className="container">
+        <div className="contact__card">
+          <h2 className="contact__title">
+            Let&apos;s Build <span className="contact__title-accent">Together</span>
+          </h2>
+          <p className="contact__subtitle">Available for collaborations and technical consultations.</p>
 
-          <ul className="contact__list">
-            <li>
-              <a href={profile.socials.email}>{profile.email}</a>
-            </li>
-            <li>
-              <a href={profile.socials.linkedin} target="_blank" rel="noreferrer">
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href={profile.socials.github} target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-            </li>
-            <li className="contact__meta">
-              {profile.location} · {profile.timezone}
-            </li>
-          </ul>
+          <a href={profile.socials.email} className="contact__email-btn">
+            <FiMail aria-hidden="true" /> {profile.email}
+          </a>
+
+          <div className="contact__icon-row">
+            <a
+              href={profile.socials.github}
+              target="_blank"
+              rel="noreferrer"
+              className="contact__icon-btn"
+              aria-label="GitHub"
+            >
+              <FiGithub aria-hidden="true" />
+            </a>
+            <a
+              href={profile.socials.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="contact__icon-btn"
+              aria-label="LinkedIn"
+            >
+              <FiLink aria-hidden="true" />
+            </a>
+          </div>
         </div>
 
         <form className="contact__form" onSubmit={handleSubmit} noValidate>
+          <p className="contact__form-heading">Or send a message directly</p>
+
           <div className="contact__field">
             <label htmlFor="name">Name</label>
             <input
@@ -94,7 +102,7 @@ export const Contact = () => {
 
           {status === 'success' && (
             <p className="contact__feedback contact__feedback--success" role="status">
-              Thanks for reaching out! I'll get back to you soon.
+              Thanks for reaching out! I&apos;ll get back to you soon.
             </p>
           )}
 

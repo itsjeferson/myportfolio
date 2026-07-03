@@ -5,12 +5,13 @@
 export const profile = {
   name: 'Mark Jeferson Manalo',
   title: 'Full-Stack Developer',
+  focus: 'Scalable Arch',
   tagline:
     'I build fast, reliable web applications for startups and businesses — from database to UI.',
   location: 'Philippines', // REPLACE_ME with your city/region
   availability: 'Open to full-time roles & freelance projects',
   timezone: 'GMT+8 (Asia/Manila)',
-  email: 'REPLACE_ME@example.com',
+  email: 'hello@mjm.dev',
   photo: '/profile-placeholder.svg', // replace with your photo, e.g. place frontend/public/profile-photo.jpg and update this path
   resumeUrl: '/api/resume', // served by the Node.js backend, see backend/public/resume.pdf
   bio: [
@@ -21,6 +22,7 @@ export const profile = {
   socials: {
     github: 'https://github.com/itsjeferson',
     linkedin: 'https://linkedin.com/in/REPLACE_ME',
-    email: 'mailto:REPLACE_ME@example.com',
+    twitter: 'https://twitter.com/REPLACE_ME',
+    email: 'mailto:hello@mjm.dev',
   },
 };

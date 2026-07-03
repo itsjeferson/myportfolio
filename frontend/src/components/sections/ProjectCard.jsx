@@ -1,39 +1,46 @@
-import { Card, Tag, Button } from '../ui/index.js';
+import { Tag } from '../ui/index.js';
 import './ProjectCard.css';
 
 export const ProjectCard = ({ project }) => {
-  return (
-    <Card className="project-card">
-      <div className="project-card__image-wrap">
-        <img src={project.image} alt={project.name} className="project-card__image" loading="lazy" />
+  const content = (
+    <>
+      <div className="project-card__visual" aria-hidden="true">
+        <span className="project-card__blob" />
+        <span className="project-card__pulse" />
+        <div className="project-card__chart">
+          {[42, 68, 50, 88, 60, 76, 46].map((h, i) => (
+            <span key={i} className="project-card__bar" style={{ '--h': `${h}%` }} />
+          ))}
+        </div>
       </div>
 
       <div className="project-card__body">
         <h3 className="project-card__title">{project.name}</h3>
-        <p className="project-card__role">{project.role}</p>
         <p className="project-card__description">{project.description}</p>
-
-        {project.impact && <p className="project-card__impact">✦ {project.impact}</p>}
 
         <div className="project-card__stack">
           {project.techStack.map((tech) => (
-            <Tag key={tech}>{tech}</Tag>
+            <Tag key={tech} dot>
+              {tech}
+            </Tag>
           ))}
         </div>
-
-        <div className="project-card__links">
-          {project.liveUrl && (
-            <Button as="a" href={project.liveUrl} target="_blank" rel="noreferrer" variant="primary">
-              Live Demo
-            </Button>
-          )}
-          {project.githubUrl && (
-            <Button as="a" href={project.githubUrl} target="_blank" rel="noreferrer" variant="secondary">
-              GitHub
-            </Button>
-          )}
-        </div>
       </div>
-    </Card>
+    </>
   );
+
+  if (project.liveUrl) {
+    return (
+      <a
+        href={project.liveUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="card project-card"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return <div className="card project-card">{content}</div>;
 };

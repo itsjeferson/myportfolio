@@ -2,60 +2,89 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  text-decoration: none;
 }
 
-.project-card__image-wrap {
-  aspect-ratio: 16 / 9;
+.project-card__visual {
+  position: relative;
+  aspect-ratio: 16 / 10;
   background-color: var(--color-bg-alt);
   border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(110, 240, 222, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(110, 240, 222, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
-.project-card__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.project-card__blob {
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 60%;
+  height: 90%;
+  background: radial-gradient(circle, rgba(143, 139, 247, 0.35), transparent 70%);
+  filter: blur(10px);
+}
+
+.project-card__pulse {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent-soft);
+}
+
+.project-card__chart {
+  position: absolute;
+  left: var(--space-4);
+  right: var(--space-4);
+  bottom: var(--space-4);
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 55%;
+}
+
+.project-card__bar {
+  flex: 1;
+  height: var(--h);
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(180deg, var(--color-accent) 0%, rgba(110, 240, 222, 0.15) 100%);
+  opacity: 0.85;
+}
+
+.project-card__bar:nth-child(even) {
+  background: linear-gradient(180deg, var(--color-accent-2) 0%, rgba(143, 139, 247, 0.15) 100%);
 }
 
 .project-card__body {
   padding: var(--space-5);
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-2);
   flex: 1;
 }
 
 .project-card__title {
+  font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 700;
-}
-
-.project-card__role {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .project-card__description {
   color: var(--color-text-muted);
   line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.project-card__impact {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--color-text);
+  font-size: 0.92rem;
 }
 
 .project-card__stack {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  margin-top: auto;
-}
-
-.project-card__links {
-  display: flex;
-  gap: var(--space-3);
   margin-top: var(--space-2);
 }

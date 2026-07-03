@@ -1,28 +1,15 @@
-.about__content {
-  max-width: 720px;
+.about__label {
+  margin-bottom: var(--space-5);
 }
 
 .about__paragraph {
+  max-width: 640px;
   color: var(--color-text-muted);
-  line-height: 1.7;
-  margin-bottom: var(--space-4);
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
-.about__meta {
-  display: flex;
-  gap: var(--space-7);
-  margin-block: var(--space-5);
-}
-
-.about__meta-label {
-  display: block;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-1);
-}
-
-.about__meta-value {
-  font-weight: 600;
+.about__paragraph strong {
+  color: var(--color-text);
+  font-weight: 700;
 }
