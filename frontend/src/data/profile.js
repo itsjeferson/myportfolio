@@ -11,8 +11,8 @@ export const profile = {
   availability: 'Open to full-time roles & freelance projects',
   timezone: 'GMT+8 (Asia/Manila)',
   email: 'REPLACE_ME@example.com',
-  photo: '/profile-placeholder.svg', // replace with your photo, e.g. place client/public/profile-photo.jpg and update this path
-  resumeUrl: '/api/resume', // served by the Node.js backend, see server/public/resume.pdf
+  photo: '/profile-placeholder.svg', // replace with your photo, e.g. place frontend/public/profile-photo.jpg and update this path
+  resumeUrl: '/api/resume', // served by the Node.js backend, see backend/public/resume.pdf
   bio: [
     "I'm a full-stack developer who enjoys turning ambiguous problems into clean, maintainable products.",
     'I specialize in building web applications end-to-end with React on the front end and Node.js on the back end, with a focus on performance, accessibility, and developer experience.',

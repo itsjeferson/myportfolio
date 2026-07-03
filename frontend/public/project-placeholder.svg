@@ -5,6 +5,6 @@
   </g>
   <g fill="#94a3b8" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">
     <text x="320" y="185">Add a project screenshot</text>
-    <text x="320" y="212" font-size="14">client/src/assets/images/</text>
+    <text x="320" y="212" font-size="14">frontend/src/assets/images/</text>
   </g>
 </svg>

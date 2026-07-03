@@ -10,7 +10,7 @@
  * To add a real project:
  * 1. Duplicate one object below.
  * 2. Replace every REPLACE_ME value.
- * 3. Drop a screenshot into client/src/assets/images/ and point `image` at it.
+ * 3. Drop a screenshot into frontend/src/assets/images/ and point `image` at it.
  */
 export const projects = [
   {

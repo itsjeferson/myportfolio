@@ -7,45 +7,45 @@ See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the full system architecture and di
 
 ## Stack
 
-- **Frontend**: React 19 + Vite (`client/`)
-- **Backend**: Node.js + Express (`server/`) — contact form email, résumé download, health check
-- **Content**: data-driven via plain JS files in `client/src/data/` (no CMS/database needed)
+- **Frontend**: React 19 + Vite (`frontend/`)
+- **Backend**: Node.js + Express (`backend/`) — contact form email, résumé download, health check
+- **Content**: data-driven via plain JS files in `frontend/src/data/` (no CMS/database needed)
 
 ## Getting started
 
 Requires Node.js 18+.
 
 ```bash
-# 1. Install all dependencies (root, client, server via npm workspaces)
+# 1. Install all dependencies (root, frontend, backend via npm workspaces)
 npm install
 
 # 2. Set up environment variables
-cp server/.env.example server/.env
-cp client/.env.example client/.env
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
 
 # 3. Add your résumé PDF (used by the "Download CV" button)
-#    Place your PDF at server/public/resume.pdf
+#    Place your PDF at backend/public/resume.pdf
 
-# 4. Run both the client and server together
+# 4. Run both the frontend and backend together
 npm run dev
 ```
 
-- Client: http://localhost:51765
-- Server: http://localhost:5000
+- Frontend: http://localhost:51765
+- Backend: http://localhost:5000
 
-Run them individually with `npm run dev:client` / `npm run dev:server` if preferred.
+Run them individually with `npm run dev:frontend` / `npm run dev:backend` if preferred.
 
 ## Editing your content
 
 Everything shown on the page — your bio, skills, projects, and work history — lives in
-`client/src/data/`. Edit those files directly; **no component/JSX changes are required**.
+`frontend/src/data/`. Edit those files directly; **no component/JSX changes are required**.
 
 | File | Section |
 | --- | --- |
-| `client/src/data/profile.js` | Hero, About, Contact |
-| `client/src/data/skills.js` | Skills |
-| `client/src/data/projects.js` | Projects |
-| `client/src/data/experience.js` | Experience / Work history |
+| `frontend/src/data/profile.js` | Hero, About, Contact |
+| `frontend/src/data/skills.js` | Skills |
+| `frontend/src/data/projects.js` | Projects |
+| `frontend/src/data/experience.js` | Experience / Work history |
 
 > **Note:** `projects.js` and `experience.js` ship with clearly-labeled `REPLACE_ME` placeholder
 > entries. The PRD defines what each project/role entry should contain, but not your actual
@@ -55,18 +55,18 @@ Everything shown on the page — your bio, skills, projects, and work history �
 
 | Command | Description |
 | --- | --- |
-| `npm run dev` | Run client + server together (with hot reload) |
-| `npm run build` | Production build of the client (`client/dist/`) |
-| `npm run start:server` | Run the server in production mode |
-| `npm run lint` | Lint both client and server |
+| `npm run dev` | Run frontend + backend together (with hot reload) |
+| `npm run build` | Production build of the frontend (`frontend/dist/`) |
+| `npm run start:backend` | Run the backend in production mode |
+| `npm run lint` | Lint both frontend and backend |
 
 ## Project structure
 
 ```
 myportfolio/
-├── client/    React.js SPA (Vite)
-├── server/    Node.js/Express API
-├── docs/      Product requirements document
+├── frontend/    React.js SPA (Vite)
+├── backend/     Node.js/Express API
+├── docs/        Product requirements document
 └── ARCHITECTURE.md
 ```
 

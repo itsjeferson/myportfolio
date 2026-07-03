@@ -30,7 +30,7 @@ const getTransporter = () => {
 export const sendContactEmail = async ({ name, email, message }) => {
   if (!isEmailConfigured()) {
     logger.warn(
-      'SMTP is not configured (see server/.env.example). Logging the contact message instead of sending it.'
+      'SMTP is not configured (see backend/.env.example). Logging the contact message instead of sending it.'
     );
     logger.info('Contact form submission:', { name, email, message });
     return { delivered: false };

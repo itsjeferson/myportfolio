@@ -1,4 +1,4 @@
-# Portfolio — Client (React)
+# Portfolio — Frontend (React)
 
 The React.js frontend for Mark Jeferson Manalo's portfolio, built with Vite.
 
@@ -24,4 +24,4 @@ npm run lint      # run oxlint
 
 ## Environment variables
 
-Copy `.env.example` to `.env` and point `VITE_API_URL` at your running backend (see `../server`).
+Copy `.env.example` to `.env` and point `VITE_API_URL` at your running backend (see `../backend`).
