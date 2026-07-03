@@ -16,7 +16,7 @@ All personal content lives in `src/data/` — edit these files to update the sit
 ## Scripts
 
 ```bash
-npm run dev       # start Vite dev server (http://localhost:5173)
+npm run dev       # start Vite dev server (http://localhost:51765)
 npm run build     # production build to dist/
 npm run preview   # preview the production build locally
 npm run lint      # run oxlint

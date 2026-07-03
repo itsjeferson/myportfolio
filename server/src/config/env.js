@@ -10,7 +10,7 @@ const toInt = (value, fallback) => {
 export const env = {
   nodeEnv: process.env.NODE_ENV || 'development',
   port: toInt(process.env.PORT, 5000),
-  clientOrigin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+  clientOrigin: process.env.CLIENT_ORIGIN || 'http://localhost:51765',
 
   smtp: {
     host: process.env.SMTP_HOST || '',

@@ -30,7 +30,7 @@ cp client/.env.example client/.env
 npm run dev
 ```
 
-- Client: http://localhost:5173
+- Client: http://localhost:51765
 - Server: http://localhost:5000
 
 Run them individually with `npm run dev:client` / `npm run dev:server` if preferred.
